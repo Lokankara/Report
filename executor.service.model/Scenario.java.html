@@ -8,8 +8,8 @@ public class Scenario {
   private String site;
   private List&lt;Step&gt; steps;
 
-<span class="nc" id="L11">  public Scenario() {</span>
-<span class="nc" id="L12">  }</span>
+<span class="fc" id="L11">  public Scenario() {</span>
+<span class="fc" id="L12">  }</span>
 
 <span class="fc" id="L14">  public Scenario(String name, String site, List&lt;Step&gt; steps) {</span>
 <span class="fc" id="L15">    this.name = name;</span>
@@ -22,33 +22,33 @@ public class Scenario {
   }
 
   public void setName(String name) {
-<span class="nc" id="L25">    this.name = name;</span>
-<span class="nc" id="L26">  }</span>
+<span class="fc" id="L25">    this.name = name;</span>
+<span class="fc" id="L26">  }</span>
 
   public String getSite() {
 <span class="fc" id="L29">    return site;</span>
   }
 
   public void setSite(String site) {
-<span class="nc" id="L33">    this.site = site;</span>
-<span class="nc" id="L34">  }</span>
+<span class="fc" id="L33">    this.site = site;</span>
+<span class="fc" id="L34">  }</span>
 
   public List&lt;Step&gt; getSteps() {
 <span class="fc" id="L37">    return steps;</span>
   }
 
   public void setSteps(List&lt;Step&gt; steps) {
-<span class="nc" id="L41">    this.steps = steps;</span>
-<span class="nc" id="L42">  }</span>
+<span class="fc" id="L41">    this.steps = steps;</span>
+<span class="fc" id="L42">  }</span>
 
   @Override
   public boolean equals(Object o) {
 <span class="pc bpc" id="L46" title="1 of 2 branches missed.">    if (this == o) return true;</span>
 <span class="pc bpc" id="L47" title="2 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) return false;</span>
-<span class="fc" id="L48">    Scenario scenarioDTO = (Scenario) o;</span>
-<span class="pc bpc" id="L49" title="1 of 2 branches missed.">    return Objects.equals(name, scenarioDTO.name) &amp;&amp;</span>
-<span class="pc bpc" id="L50" title="1 of 2 branches missed.">        Objects.equals(site, scenarioDTO.site) &amp;&amp;</span>
-<span class="pc bpc" id="L51" title="1 of 2 branches missed.">        Objects.equals(steps, scenarioDTO.steps);</span>
+<span class="nc" id="L48">    Scenario scenarioDTO = (Scenario) o;</span>
+<span class="nc bnc" id="L49" title="All 2 branches missed.">    return Objects.equals(name, scenarioDTO.name) &amp;&amp;</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">        Objects.equals(site, scenarioDTO.site) &amp;&amp;</span>
+<span class="nc bnc" id="L51" title="All 2 branches missed.">        Objects.equals(steps, scenarioDTO.steps);</span>
   }
 
 
